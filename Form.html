@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="back-to-tos-container">
+        <a href="index.html" class="back-to-tos-button">Back to Terms of Service</a>
+    </div>
+
+    <form id="commissionForm">
+        <h2>Commission Request Form</h2>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="commissionType">Commission Type:</label>
+        <select id="commissionType" name="commissionType">
+            <option value="portrait">Portrait</option>
+            <option value="halfBody">Half Body</option>
+            <option value="fullBody">Full Body</option>
+        </select>
+
+        <!-- Cambio: Agregar un campo para el enlace del archivo de referencia -->
+        <label for="referenceLink">Reference File Link:</label>
+        <input type="text" id="referenceLink" name="referenceLink" placeholder="Paste your reference file link here"
+            required>
+
+        <label for="description">Detailed Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <h3>Fees & Extras</h3>
+
+        <div class="form-section">
+            <label for="privacyOption">Privacy Option (80% extra on commission price):</label>
+            <input type="checkbox" id="privacyOption" name="privacyOption">
+        </div>
+
+        <div class="form-section">
+            <label for="additionalRevisions">Additional Revisions ($20 each):</label>
+            <select id="additionalRevisions" name="additionalRevisions">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="expeditedDelivery">Expedited Delivery (Additional 50% of commission price):</label>
+            <input type="checkbox" id="expeditedDelivery" name="expeditedDelivery">
+        </div>
+
+        <div class="form-section">
+            <label for="extraFeatures">Extra Features (Specify details in description):</label>
+            <input type="checkbox" id="extraProps" name="extraFeatures" value="Extra Props"> Extra Props<br>
+            <input type="checkbox" id="detailedBackground" name="extraFeatures" value="Detailed Background"> Detailed
+            Background<br>
+            <label for="additionalCharacters">Additional Characters (75% of original price each, up to 2):</label>
+            <select id="additionalCharacters" name="additionalCharacters">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="totalPrice">Total Price:</label>
+            <input type="text" id="totalPrice" name="totalPrice" readonly>
+        </div>
+
+        <div class="form-disclaimer">
+            <p>Please note: Submitting this form does not guarantee acceptance of the commission. I may contact you
+                with further questions to clarify your request.</p>
+        </div>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffefe0; /* un tono más cálido de fondo */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.tos-container, .process-container, form {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* efecto de hover suave */
+}
+
+.tos-container:hover, .process-container:hover, form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, .form-button {
+    color: #ff7043; /* un color más vivo y cálido */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffddd0; /* una línea más suave */
+}
+
+.form-button {
+    background-color: #ff7043; /* color más vivo para el botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #ff5722; /* un color más oscuro al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Añadir animaciones para el proceso de comisión */
+.process-steps .step.active {
+    animation: stepEnter 0.5s ease forwards, pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 112, 67, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 112, 67, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 112, 67, 0);
+    }
+}
+
+/* Otros estilos pueden mantenerse igual o ajustarse según sea necesario */
+
+.disclaimer-container {
+    background-color: #f2f2f2; /* Un fondo ligeramente gris para destacarlo */
+    color: #333; /* Color de texto oscuro para contraste */
+    border-left: 4px solid #ff7043; /* Una línea a la izquierda para destacar, usa un color que combine con tu diseño */
+    padding: 10px 20px; /* Espaciado interno para no pegar el texto a los bordes */
+    margin: 20px 0; /* Margen exterior para separarlo de otros elementos */
+    border-radius: 5px; /* Bordes redondeados para suavizar el aspecto */
+    font-size: 0.9em; /* Un tamaño de fuente ligeramente más pequeño para diferenciar del texto principal */
+}
+
+@media (max-width: 768px) {
+    .disclaimer-container {
+        padding: 10px; /* Ajustar el padding para dispositivos más pequeños */
+    }
+}
+#backToTopBtn {
+    position: fixed; /* Posición fija en la página */
+    bottom: 20px; /* 20px desde la parte inferior */
+    right: 30px; /* 30px desde la derecha */
+    z-index: 99; /* Asegura que el botón esté sobre otros elementos */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    background-color: #ff7043; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+#backToTopBtn:hover {
+    background-color: #ff5722; /* Color al pasar el mouse por encima */
+}

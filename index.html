@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Terms of Service</title>
+    <link rel="stylesheet" href="./styles/TOS.css">
+    <script src="./js/TOS.js" defer></script>
+</head>
+
+<body>
+    <!-- Botones para cambio de idioma -->
+    <div>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('jp')">日本語</button>
+    </div>
+
+    <div class="tos-container">
+        <h1 data-translate="tosTitle">Terms of Service (TOS)</h1>
+        <p data-translate="welcome">Welcome and thank you for considering our art commission services. Please read the
+            following terms carefully
+            before proceeding.</p>
+
+        <h2 data-translate="generalConditions">General Conditions</h2>
+        <ul>
+            <li data-translate="commissionWillBeFeatured">Your commission will be featured on my DeviantArt, Twitter,
+                Pixiv, Patreon, and other
+                sites in high
+                resolution unless otherwise requested. A privacy fee of 80% over the commission price will apply if you
+                prefer not to have your commissioned piece posted.</li>
+            <li data-translate="artworkForPersonalUse">The artwork can be used for personal purposes, such as icons and
+                banners. Credit to
+                the artist is
+                mandatory.</li>
+            <li data-translate="commercialUseProhibited">Commercial use of the commissioned work is prohibited unless a
+                separate agreement is
+                made.</li>
+            <li data-translate="ownershipRights">Ownership rights of the original artwork remain with the artist. You
+                are paying for
+                the service and time
+                taken to create the artwork.</li>
+            <li data-translate="revisionsPolicy">Revisions, cancellation policy, and additional services may incur extra
+                charges, which
+                will be discussed
+                and agreed upon before commencing the work.</li>
+        </ul>
+
+        <h2 data-translate="commissionProcess">Commission Process</h2>
+        <ul>
+            <li data-translate="paymentInFull">Payment must be made in full before work begins. We accept payment via
+                PayPal .</li>
+            <li data-translate="detailedDescriptionRequired">A detailed description of the commission, along with any
+                reference images and your
+                email for
+                communication, is required to start the project.</li>
+            <li data-translate="estimatedCompletionTime">Estimated completion time varies by complexity, ranging from 1
+                week to 4 months. Expedited completion can be arranged for an additional fee.</li>
+        </ul>
+
+        <h2 data-translate="revisionsAndCancellations">Revisions and Cancellations</h2>
+        <ul>
+            <li data-translate="oneRevisionIncluded">One revision is included in the base price, provided it does not
+                deviate significantly
+                from the original
+                agreement. Additional revisions will be subject to a fee.</li>
+            <li data-translate="partialRefundsForCancellations">Cancellations after work has commenced may only be
+                partially refunded, depending on
+                the stage of
+                completion.</li>
+        </ul>
+
+        <h2 data-translate="licensingAndUsage">Licensing and Usage</h2>
+        <ul>
+            <li data-translate="forPersonalUseOnly">Commissioned works are for personal use only. A separate commercial
+                license must be
+                purchased for
+                commercial use.</li>
+            <li data-translate="artistRightsToDisplayWork">The artist reserves the right to display all commissioned
+                work in their portfolio and
+                social media
+                unless a privacy fee is paid.</li>
+        </ul>
+
+        <p data-translate="byCommissioning">By commissioning me, you agree to these terms and conditions. Please start
+            the process by filling out the form below; once submitted, we will enter into negotiations.</p>
+    </div>
+
+    <div class="process-container">
+        <h3 data-translate="">Commission Process</h3>
+        <ul class="process-steps">
+            <li class="step active"><span data-translate="">Inquiry</span>
+                <div class="step-description" data-translate="">Initial contact where the client's needs and project
+                    details are
+                    discussed.</div>
+            </li>
+            <li class="step" data-translate=""><span>Agreement</span>
+                <div class="step-description">Terms, scope, and expectations of the commission are agreed upon.</div>
+            </li>
+            <li class="step" data-translate=""><span>Payment</span>
+                <div class="step-description" data-translate="">Payment is processed to secure the commission and begin
+                    work.</div>
+            </li>
+            <li class="step"><span>Production</span>
+                <div class="step-description" data-translate="">The artwork is created following the agreed-upon
+                    specifications.</div>
+            </li>
+            <li class="step"><span>Delivery</span>
+                <div class="step-description" data-translate="">The completed artwork is delivered to the client in the
+                    agreed format.
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="disclaimer-container">
+        <p data-translate="disclaimer">I will not create artworks that infringe on international laws, USA, Japan,
+            Europe, etc.</p>
+    </div>
+
+    <!-- Botón TOS en el formulario -->
+    <!-- Button to go to the Form page -->
+    <div class="form-button-container">
+        <a href="Form.html" class="form-button" data-translate="proceedToForm">Proceed to Commission
+            Form</a>
+    </div>
+    <button id="backToTopBtn" title="Go to top">↑</button>
+
+
+    <script>
+        const translations = {
+            en: {
+                title: "Terms of Service",
+                tosTitle: "Terms of Service (TOS)",
+                welcome: "Welcome and thank you for considering our art commission services. Please read the following terms carefully before proceeding.",
+                generalConditions: "General Conditions",
+                commissionWillBeFeatured: "Your commission will be featured on my DeviantArt, Twitter, Pixiv, Patreon, and other sites in high resolution unless otherwise requested. A privacy fee of 80% over the commission price will apply if you prefer not to have your commissioned piece posted.",
+                artworkForPersonalUse: "The artwork can be used for personal purposes, such as icons and banners. Credit to the artist is mandatory.",
+                commercialUseProhibited: "Commercial use of the commissioned work is prohibited unless a separate agreement is made.",
+                ownershipRights: "Ownership rights of the original artwork remain with the artist. You are paying for the service and time taken to create the artwork.",
+                revisionsPolicy: "Revisions, cancellation policy, and additional services may incur extra charges, which will be discussed and agreed upon before commencing the work.",
+                commissionProcess: "Commission Process",
+                paymentInFull: "Payment must be made in full before work begins. We accept payment via PayPal.",
+                detailedDescriptionRequired: "A detailed description of the commission, along with any reference images and your email for communication, is required to start the project.",
+                estimatedCompletionTime: "Estimated completion time varies by complexity. ranging from 1 week to 4 months Expedited completion can be arranged for an additional fee.",
+                revisionsAndCancellations: "Revisions and Cancellations",
+                oneRevisionIncluded: "One revision is included in the base price, provided it does not deviate significantly from the original agreement. Additional revisions will be subject to a fee.",
+                partialRefundsForCancellations: "Cancellations after work has commenced may only be partially refunded, depending on the stage of completion.",
+                licensingAndUsage: "Licensing and Usage",
+                forPersonalUseOnly: "Commissioned works are for personal use only. A separate commercial license must be purchased for commercial use.",
+                artistRightsToDisplayWork: "The artist reserves the right to display all commissioned work in their portfolio and social media unless a privacy fee is paid.",
+                byCommissioning: "By commissioning me, you agree to these terms and conditions. Please start the process by filling out the form below; once submitted, we will enter into negotiations.",
+                proceedToForm: "Proceed to Commission Form",
+                disclaimer: "I will not create artworks that infringe on international laws, USA, Japan, Europe, etc.",
+            }
+            ,
+            es: {
+                title: "Términos de Servicio",
+                tosTitle: "Términos de Servicio (TOS)",
+                welcome: "Bienvenido y gracias por considerar nuestros servicios de comisión de arte. Por favor, lee los siguientes términos cuidadosamente antes de proceder.",
+                generalConditions: "Condiciones Generales",
+                commissionWillBeFeatured: "Tu comisión será destacada en mi DeviantArt, Twitter, Pixiv, Patreon y otros sitios en alta resolución a menos que se solicite lo contrario. Un recargo por privacidad del 80% sobre el precio de la comisión se aplicará si prefieres no tener tu obra comisionada publicada.",
+                artworkForPersonalUse: "La obra puede ser utilizada para fines personales, como íconos y banners. Es obligatorio dar crédito al artista.",
+                commercialUseProhibited: "El uso comercial de la obra comisionada está prohibido a menos que se haga un acuerdo por separado.",
+                ownershipRights: "Los derechos de propiedad de la obra original permanecen con el artista. Estás pagando por el servicio y el tiempo tomado para crear la obra.",
+                revisionsPolicy: "Las revisiones, política de cancelación y servicios adicionales pueden incurrir en cargos extra, los cuales serán discutidos y acordados antes de comenzar el trabajo.",
+                commissionProcess: "Proceso de Comisión",
+                paymentInFull: "El pago debe realizarse en su totalidad antes de comenzar el trabajo. Pagos a través de PayPal.",
+                detailedDescriptionRequired: "Se requiere una descripción detallada de la comisión, junto con cualquier imagen de referencia y tu correo electrónico para la comunicación, para iniciar el proyecto.",
+                estimatedCompletionTime: "El tiempo estimado de finalización varía según la complejidad, oscilando entre 1 semana y 4 meses. Se puede organizar una finalización acelerada por un cargo adicional.",
+                revisionsAndCancellations: "Revisiones y Cancelaciones",
+                oneRevisionIncluded: "Una revisión está incluida en el precio base, siempre que no se desvíe significativamente del acuerdo original. Las revisiones adicionales estarán sujetas a una tarifa.",
+                partialRefundsForCancellations: "Las cancelaciones después de haber comenzado el trabajo solo pueden ser parcialmente reembolsadas, dependiendo de la etapa de finalización.",
+                licensingAndUsage: "Licencia y Uso",
+                forPersonalUseOnly: "Las obras comisionadas son solo para uso personal. Se debe adquirir una licencia comercial por separado para el uso comercial.",
+                artistRightsToDisplayWork: "El artista se reserva el derecho de mostrar todo trabajo comisionado en su portafolio y redes sociales a menos que se pague una tarifa de privacidad.",
+                byCommissioning: "Al comisionarme, aceptas estos términos y condiciones. Por favor inicia el proceso rellenando el formulario a continuación; una vez enviado, entraremos en negociaciones.",
+                proceedToForm: "Proceder al Formulario de Comisión",
+                disclaimer: "No crearé obras de arte que infrinjan las leyes internacionales, EE. UU., Japón, Europa, etc.",
+            }
+            ,
+            jp: {
+                title: "利用規約",
+                tosTitle: "利用規約 (TOS)",
+                welcome: "当社のアートコミッションサービスをご検討いただき、ありがとうございます。進む前に、以下の条件を注意深くお読みください。",
+                generalConditions: "一般条件",
+                commissionWillBeFeatured: "あなたのコミッションは、特に要望がない限り、DeviantArt、Twitter、Pixiv、Patreon、その他のサイトに高解像度で掲載されます。コミッション作品を掲載しないことを希望する場合は、コミッション価格の80％のプライバシー料金が適用されます。",
+                artworkForPersonalUse: "アートワークは、アイコンやバナーなどの個人的な用途に使用することができます。アーティストへのクレジット表記は必須です。",
+                commercialUseProhibited: "コミッション作品の商業利用は、別途契約を結んだ場合を除き、禁止されています。",
+                ownershipRights: "オリジナルアートワークの所有権はアーティストに留まります。あなたが支払うのは、アートワークを作成するためのサービスと時間です。",
+                revisionsPolicy: "修正、キャンセルポリシー、および追加サービスは追加料金がかかる場合があり、作業を開始する前に話し合い、合意されます。",
+                commissionProcess: "コミッションプロセス",
+                paymentInFull: "作業を開始する前に全額支払う必要があります。PayPalでの支払いを受け付けています。",
+                detailedDescriptionRequired: "プロジェクトを開始するためには、コミッションの詳細な説明と参照画像、そして通信用のメールアドレスが必要です。",
+                estimatedCompletionTime: "完成予定時間は複雑さによって異なり、1週間から4ヶ月の範囲です。追加料金で迅速な完成を手配することができます。",
+                revisionsAndCancellations: "修正とキャンセル",
+                oneRevisionIncluded: "基本価格には、元の合意から大きく逸脱しない限り、1回の修正が含まれています。追加の修正は料金が発生します。",
+                partialRefundsForCancellations: "作業開始後のキャンセルは、完成度に応じて部分的にのみ返金されます。",
+                licensingAndUsage: "ライセンスと使用",
+                forPersonalUseOnly: "委託作品は個人使用のみを目的としています。商業用途には別途商業ライセンスを購入する必要があります。",
+                artistRightsToDisplayWork: "アーティストは、プライバシー料金を支払った場合を除き、委託されたすべての作品を自身のポートフォリオやソーシャルメディアに表示する権利を留保します。",
+                byCommissioning: "私を委託することで、これらの条件に同意したことになります。以下のフォームに記入してプロセスを開始してください。送信されたら、交渉に入ります。",
+                proceedToForm: "コミッションフォームに進む",
+                disclaimer: "国際法、アメリカ、日本、ヨーロッパなどを侵害するアートワークを作成することはありません。",
+            }
+
+        };
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-translate]").forEach(el => {
+                const key = el.getAttribute("data-translate");
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                } else {
+                    console.error("Translation not found for ", key);
+                }
+            });
+        }
+
+
+    </script>
+    <script>
+        // Cuando el usuario hace clic en el botón, se desplaza al principio de la página
+        document.getElementById('backToTopBtn').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
