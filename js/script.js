@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const additionalRevisionsElement = document.getElementById('additionalRevisions');
     const expeditedDeliveryElement = document.getElementById('expeditedDelivery');
     const additionalCharactersElement = document.getElementById('additionalCharacters');
-    const basePrices = { portrait: 175, halfBody: 250, fullBody: 300 };
+    const basePrices = { portrait: 20, halfBody: 25, fullBody: 50 };
 
     function calculateTotal() {
         let totalPrice = basePrices[commissionTypeElement.value];
